@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres:12.1-alpine
+    container_name: node1-postgres
+    environment:
+      POSTGRES_PASSWORD: ryan
+    ports:
+      - 5432:5432
